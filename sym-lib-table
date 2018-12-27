@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name CS5464-ISZ)(type Legacy)(uri ${KIPRJMOD}/lib/CS5464-ISZ.lib)(options "")(descr ""))
+)

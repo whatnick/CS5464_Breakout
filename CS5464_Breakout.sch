@@ -5854,7 +5854,7 @@ L device:R_Small R3
 U 1 1 5C215C49
 P 1285 2230
 F 0 "R3" H 1226 2184 50  0000 R CNN
-F 1 "1K" H 1226 2275 50  0000 R CNN
+F 1 "2.4R" H 1226 2275 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1285 2230 50  0001 C CNN
 F 3 "~" H 1285 2230 50  0001 C CNN
 	1    1285 2230
@@ -5865,7 +5865,7 @@ L device:R_Small R4
 U 1 1 5C215CBA
 P 1285 2540
 F 0 "R4" H 1226 2494 50  0000 R CNN
-F 1 "1K" H 1226 2585 50  0000 R CNN
+F 1 "2.4R" H 1226 2585 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1285 2540 50  0001 C CNN
 F 3 "~" H 1285 2540 50  0001 C CNN
 	1    1285 2540
@@ -5887,7 +5887,7 @@ L device:R_Small R1
 U 1 1 5C218E12
 P 1280 3235
 F 0 "R1" H 1221 3189 50  0000 R CNN
-F 1 "1K" H 1221 3280 50  0000 R CNN
+F 1 "2.4R" H 1221 3280 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1280 3235 50  0001 C CNN
 F 3 "~" H 1280 3235 50  0001 C CNN
 	1    1280 3235
@@ -5898,7 +5898,7 @@ L device:R_Small R2
 U 1 1 5C218E18
 P 1280 3545
 F 0 "R2" H 1221 3499 50  0000 R CNN
-F 1 "1K" H 1221 3590 50  0000 R CNN
+F 1 "2.4R" H 1221 3590 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1280 3545 50  0001 C CNN
 F 3 "~" H 1280 3545 50  0001 C CNN
 	1    1280 3545
@@ -5972,9 +5972,9 @@ VIN+
 Text GLabel 2155 1650 2    50   Output ~ 0
 VIN-
 Text GLabel 2155 2095 2    50   Output ~ 0
-IIN+
+IIN1+
 Text GLabel 2155 2670 2    50   Output ~ 0
-IIN-
+IIN1-
 Text GLabel 2125 3105 2    50   Output ~ 0
 IIN2+
 Text GLabel 2125 3680 2    50   Output ~ 0
@@ -5982,12 +5982,12 @@ IIN2-
 $Comp
 L device:C_Small C10
 U 1 1 5C23D724
-P 3860 1115
-F 0 "C10" H 3952 1161 50  0000 L CNN
-F 1 "100nF" H 3952 1070 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3860 1115 50  0001 C CNN
-F 3 "~" H 3860 1115 50  0001 C CNN
-	1    3860 1115
+P 6445 1120
+F 0 "C10" H 6537 1166 50  0000 L CNN
+F 1 "100nF" H 6537 1075 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6445 1120 50  0001 C CNN
+F 3 "~" H 6445 1120 50  0001 C CNN
+	1    6445 1120
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -6004,12 +6004,12 @@ $EndComp
 $Comp
 L device:C_Small C11
 U 1 1 5C23DC6A
-P 3735 3995
-F 0 "C11" H 3827 4041 50  0000 L CNN
-F 1 "100nF" H 3827 3950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3735 3995 50  0001 C CNN
-F 3 "~" H 3735 3995 50  0001 C CNN
-	1    3735 3995
+P 4190 955
+F 0 "C11" H 4282 1001 50  0000 L CNN
+F 1 "100nF" H 4282 910 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4190 955 50  0001 C CNN
+F 3 "~" H 4190 955 50  0001 C CNN
+	1    4190 955 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -6078,4 +6078,101 @@ Wire Wire Line
 	4025 3610 4370 3610
 Wire Wire Line
 	4370 3610 4370 3525
+Text GLabel 4370 1825 0    50   Input ~ 0
+VIN+
+Text GLabel 4370 1925 0    50   Input ~ 0
+VIN-
+Text GLabel 4370 2125 0    50   Input ~ 0
+IIN2-
+Text GLabel 4370 2225 0    50   Input ~ 0
+IIN2+
+Text GLabel 4370 2425 0    50   Input ~ 0
+IIN1-
+Text GLabel 4370 2525 0    50   Input ~ 0
+IIN1+
+Wire Wire Line
+	6025 1020 6025 925 
+Wire Wire Line
+	5770 925  5870 925 
+Connection ~ 6025 925 
+Wire Wire Line
+	6025 925  6445 925 
+Wire Wire Line
+	5770 1025 5870 1025
+Wire Wire Line
+	5870 1025 5870 925 
+Connection ~ 5870 925 
+Wire Wire Line
+	5870 925  6025 925 
+Wire Wire Line
+	6445 1020 6445 925 
+Wire Wire Line
+	6025 1220 6445 1220
+Wire Wire Line
+	6445 1220 6445 1215
+Connection ~ 6445 1220
+$Comp
+L power:GND #PWR07
+U 1 1 5C2733C9
+P 6445 1220
+F 0 "#PWR07" H 6445 970 50  0001 C CNN
+F 1 "GND" H 6450 1047 50  0000 C CNN
+F 2 "" H 6445 1220 50  0001 C CNN
+F 3 "" H 6445 1220 50  0001 C CNN
+	1    6445 1220
+	1    0    0    -1  
+$EndComp
+Text GLabel 4370 3025 0    50   Input ~ 0
+MOSI
+Text GLabel 4370 3125 0    50   Input ~ 0
+~CS
+Text GLabel 4370 3225 0    50   Input ~ 0
+MISO
+Text GLabel 4370 2925 0    50   Input ~ 0
+SCLK
+Text GLabel 4370 1425 0    50   Input ~ 0
+~RESET
+$Comp
+L power:GND #PWR08
+U 1 1 5C27A288
+P 4190 765
+F 0 "#PWR08" H 4190 515 50  0001 C CNN
+F 1 "GND" H 4195 592 50  0000 C CNN
+F 2 "" H 4190 765 50  0001 C CNN
+F 3 "" H 4190 765 50  0001 C CNN
+	1    4190 765 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4370 1225 4190 1225
+Wire Wire Line
+	4190 1225 4190 1055
+Wire Wire Line
+	4190 855  4190 765 
+Text GLabel 4190 1225 0    50   Input ~ 0
+VREF
+Text GLabel 5770 1225 2    50   Output ~ 0
+VREF
+$Comp
+L graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 5C28345E
+P 5315 5610
+F 0 "LOGO1" H 5315 5885 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 5315 5385 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 5315 5610 50  0001 C CNN
+F 3 "~" H 5315 5610 50  0001 C CNN
+	1    5315 5610
+	1    0    0    -1  
+$EndComp
+$Comp
+L whatnick:LOGO G1
+U 1 1 5C28356B
+P 4720 5630
+F 0 "G1" H 4720 5528 60  0001 C CNN
+F 1 "LOGO" H 4720 5732 60  0001 C CNN
+F 2 "Whatnick_logo:Whatnick_logo" H 4720 5630 50  0001 C CNN
+F 3 "" H 4720 5630 50  0001 C CNN
+	1    4720 5630
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

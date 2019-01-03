@@ -6042,12 +6042,12 @@ $EndComp
 $Comp
 L power:GND #PWR06
 U 1 1 5C253B3E
-P 5900 3925
-F 0 "#PWR06" H 5900 3675 50  0001 C CNN
-F 1 "GND" V 5905 3797 50  0000 R CNN
-F 2 "" H 5900 3925 50  0001 C CNN
-F 3 "" H 5900 3925 50  0001 C CNN
-	1    5900 3925
+P 5900 4075
+F 0 "#PWR06" H 5900 3825 50  0001 C CNN
+F 1 "GND" V 5905 3947 50  0000 R CNN
+F 2 "" H 5900 4075 50  0001 C CNN
+F 3 "" H 5900 4075 50  0001 C CNN
+	1    5900 4075
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -6057,8 +6057,6 @@ Wire Wire Line
 Wire Wire Line
 	5770 3825 5900 3825
 Connection ~ 5900 3825
-Wire Wire Line
-	5900 3825 5900 3925
 $Comp
 L device:Crystal Y1
 U 1 1 5C257450
@@ -6130,8 +6128,6 @@ Text GLabel 4370 3225 0    50   Input ~ 0
 MISO
 Text GLabel 4370 2925 0    50   Input ~ 0
 SCLK
-Text GLabel 4370 1425 0    50   Input ~ 0
-~RESET
 $Comp
 L power:GND #PWR08
 U 1 1 5C27A288
@@ -6175,4 +6171,175 @@ F 3 "" H 4720 5630 50  0001 C CNN
 	1    4720 5630
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5770 3925 5900 3925
+Wire Wire Line
+	5900 3825 5900 3925
+Wire Wire Line
+	5900 4075 5900 4025
+Connection ~ 5900 3925
+Wire Wire Line
+	5770 4025 5900 4025
+Connection ~ 5900 4025
+Wire Wire Line
+	5900 4025 5900 3925
+$Comp
+L power:+3V3 #PWR09
+U 1 1 5C2F0277
+P 7920 1265
+F 0 "#PWR09" H 7920 1115 50  0001 C CNN
+F 1 "+3V3" H 7935 1438 50  0000 C CNN
+F 2 "" H 7920 1265 50  0001 C CNN
+F 3 "" H 7920 1265 50  0001 C CNN
+	1    7920 1265
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5C2F037D
+P 8820 1260
+F 0 "#PWR010" H 8820 1010 50  0001 C CNN
+F 1 "GND" H 8825 1087 50  0000 C CNN
+F 2 "" H 8820 1260 50  0001 C CNN
+F 3 "" H 8820 1260 50  0001 C CNN
+	1    8820 1260
+	1    0    0    -1  
+$EndComp
+Text GLabel 8020 1195 3    50   Output ~ 0
+VP
+Text GLabel 8120 1195 3    50   Output ~ 0
+VN
+Text GLabel 8220 1195 3    50   Output ~ 0
+SCLK
+Text GLabel 8320 1195 3    50   Output ~ 0
+CS
+Text GLabel 8420 1195 3    50   Input ~ 0
+MISO
+Text GLabel 8520 1195 3    50   Output ~ 0
+MOSI
+Text GLabel 8620 1195 3    50   Output ~ 0
+IP
+Text GLabel 8720 1195 3    50   Output ~ 0
+IN
+Wire Wire Line
+	7920 1195 7920 1265
+Wire Wire Line
+	8820 1195 8820 1260
+$Comp
+L power:+3V3 #PWR011
+U 1 1 5C2F8D79
+P 6025 820
+F 0 "#PWR011" H 6025 670 50  0001 C CNN
+F 1 "+3V3" H 6040 993 50  0000 C CNN
+F 2 "" H 6025 820 50  0001 C CNN
+F 3 "" H 6025 820 50  0001 C CNN
+	1    6025 820 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6025 820  6025 925 
+$Comp
+L Connector_Generic:Conn_01x01 ~INT1
+U 1 1 5C2FACA5
+P 6110 2225
+F 0 "~INT1" H 6189 2273 50  0000 L CNN
+F 1 "~INT" H 6189 2169 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6110 2225 50  0001 C CNN
+F 3 "~" H 6110 2225 50  0001 C CNN
+	1    6110 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 ~E3
+U 1 1 5C2FAE0F
+P 6110 1925
+F 0 "~E3" H 6190 1973 50  0000 L CNN
+F 1 "~E3" H 6190 1869 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6110 1925 50  0001 C CNN
+F 3 "~" H 6110 1925 50  0001 C CNN
+	1    6110 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 ~E2
+U 1 1 5C2FAE6D
+P 6110 1825
+F 0 "~E2" H 6190 1873 50  0000 L CNN
+F 1 "~E2" H 6190 1769 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6110 1825 50  0001 C CNN
+F 3 "~" H 6110 1825 50  0001 C CNN
+	1    6110 1825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 ~E1
+U 1 1 5C2FAED1
+P 6110 1725
+F 0 "~E1" H 6190 1773 50  0000 L CNN
+F 1 "~E1" H 6190 1669 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6110 1725 50  0001 C CNN
+F 3 "~" H 6110 1725 50  0001 C CNN
+	1    6110 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 CPUCLK1
+U 1 1 5C2FAF2B
+P 6110 1425
+F 0 "CPUCLK1" H 6190 1467 50  0000 L CNN
+F 1 "CPUCLK" H 6190 1376 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6110 1425 50  0001 C CNN
+F 3 "~" H 6110 1425 50  0001 C CNN
+	1    6110 1425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 MODE1
+U 1 1 5C305837
+P 4060 2725
+F 0 "MODE1" H 3980 2500 50  0000 C CNN
+F 1 "MODE" H 3980 2591 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4060 2725 50  0001 C CNN
+F 3 "~" H 4060 2725 50  0001 C CNN
+	1    4060 2725
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4370 2725 4260 2725
+Wire Wire Line
+	5770 1425 5910 1425
+Wire Wire Line
+	5910 1725 5770 1725
+Wire Wire Line
+	5910 1825 5770 1825
+Wire Wire Line
+	5910 1925 5770 1925
+Wire Wire Line
+	5910 2225 5770 2225
+$Comp
+L Connector_Generic:Conn_01x01 PFMON1
+U 1 1 5C318F9F
+P 4110 1625
+F 0 "PFMON1" H 4030 1400 50  0000 C CNN
+F 1 "PFMON" H 4030 1491 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4110 1625 50  0001 C CNN
+F 3 "~" H 4110 1625 50  0001 C CNN
+	1    4110 1625
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4310 1625 4370 1625
+$Comp
+L Connector_Generic:Conn_01x01 ~RESET1
+U 1 1 5C31BEB1
+P 4110 1425
+F 0 "~RESET1" H 4030 1181 50  0000 C CNN
+F 1 "~RESET" H 4030 1285 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4110 1425 50  0001 C CNN
+F 3 "~" H 4110 1425 50  0001 C CNN
+	1    4110 1425
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4370 1425 4310 1425
 $EndSCHEMATC

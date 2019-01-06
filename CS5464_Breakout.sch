@@ -6212,7 +6212,7 @@ VN
 Text GLabel 8220 1195 3    50   Output ~ 0
 SCLK
 Text GLabel 8320 1195 3    50   Output ~ 0
-CS
+~CS
 Text GLabel 8420 1195 3    50   Input ~ 0
 MISO
 Text GLabel 8520 1195 3    50   Output ~ 0
@@ -6342,4 +6342,30 @@ F 3 "~" H 4110 1425 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4370 1425 4310 1425
+$Comp
+L Connector_Generic:Conn_01x01 IP2
+U 1 1 5C32668E
+P 1880 4160
+F 0 "IP2" H 1959 4208 50  0000 L CNN
+F 1 "IP2" H 1959 4104 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 1880 4160 50  0001 C CNN
+F 3 "~" H 1880 4160 50  0001 C CNN
+	1    1880 4160
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 IN2
+U 1 1 5C32679C
+P 1880 4380
+F 0 "IN2" H 1959 4428 50  0000 L CNN
+F 1 "IN2" H 1959 4324 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 1880 4380 50  0001 C CNN
+F 3 "~" H 1880 4380 50  0001 C CNN
+	1    1880 4380
+	1    0    0    -1  
+$EndComp
+Text GLabel 1680 4160 0    50   Output ~ 0
+IP2
+Text GLabel 1680 4380 0    50   Output ~ 0
+IN2
 $EndSCHEMATC

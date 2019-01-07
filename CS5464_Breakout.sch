@@ -5573,6 +5573,7 @@ F 0 "C7" H 2052 1396 50  0000 L CNN
 F 1 "C_Small" H 2052 1305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1960 1350 50  0001 C CNN
 F 3 "~" H 1960 1350 50  0001 C CNN
+F 4 " " H 1960 1350 50  0001 C CNN "DNP"
 	1    1960 1350
 	1    0    0    -1  
 $EndComp
@@ -5667,6 +5668,7 @@ F 0 "C8" H 2082 2416 50  0000 L CNN
 F 1 "C_Small" H 2082 2325 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1990 2370 50  0001 C CNN
 F 3 "~" H 1990 2370 50  0001 C CNN
+F 4 " " H 1990 2370 50  0001 C CNN "DNP"
 	1    1990 2370
 	1    0    0    -1  
 $EndComp
@@ -5765,6 +5767,7 @@ F 0 "C9" H 2097 3426 50  0000 L CNN
 F 1 "C_Small" H 2097 3335 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2005 3380 50  0001 C CNN
 F 3 "~" H 2005 3380 50  0001 C CNN
+F 4 " " H 2005 3380 50  0001 C CNN "DNP"
 	1    2005 3380
 	1    0    0    -1  
 $EndComp
@@ -6020,6 +6023,7 @@ F 0 "J1" V 8537 941 50  0000 C CNN
 F 1 "Conn_01x10" V 8446 941 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 8320 995 50  0001 C CNN
 F 3 "~" H 8320 995 50  0001 C CNN
+F 4 " " V 8320 995 50  0001 C CNN "DNP"
 	1    8320 995 
 	0    -1   -1   0   
 $EndComp
@@ -6031,11 +6035,12 @@ F 0 "U1" H 5070 4192 50  0000 C CNN
 F 1 "CS5464-ISZ" H 5070 4101 50  0000 C CNN
 F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 5070 2425 50  0001 L BNN
 F 3 "Cirrus Logic" H 5070 2425 50  0001 L BNN
-F 4 "CS5464-ISZ" H 5070 2425 50  0001 L BNN "Field4"
-F 5 "SSOP-28 Cirrus Logic" H 5070 2425 50  0001 L BNN "Field5"
-F 6 "Driver IC? No. of Outputs: 3? Power Dissipation, Pd: 500mW? No. of Pins: 28? Operating Temperature Range: -40" H 5070 2425 50  0001 L BNN "Field6"
-F 7 "None" H 5070 2425 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 5070 2425 50  0001 L BNN "Field8"
+F 4 "CS5464-ISZ" H 5070 2425 50  0001 C CNN "manf#"
+F 5 "CS5464-ISZ" H 5070 2425 50  0001 L BNN "Field4"
+F 6 "SSOP-28 Cirrus Logic" H 5070 2425 50  0001 L BNN "Field5"
+F 7 "Driver IC? No. of Outputs: 3? Power Dissipation, Pd: 500mW? No. of Pins: 28? Operating Temperature Range: -40" H 5070 2425 50  0001 L BNN "Field6"
+F 8 "None" H 5070 2425 50  0001 L BNN "Field7"
+F 9 "Unavailable" H 5070 2425 50  0001 L BNN "Field8"
 	1    5070 2425
 	1    0    0    -1  
 $EndComp
@@ -6157,6 +6162,7 @@ F 0 "LOGO1" H 5315 5885 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 5315 5385 50  0001 C CNN
 F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 5315 5610 50  0001 C CNN
 F 3 "~" H 5315 5610 50  0001 C CNN
+F 4 " " H 5315 5610 50  0001 C CNN "DNP"
 	1    5315 5610
 	1    0    0    -1  
 $EndComp
@@ -6168,6 +6174,7 @@ F 0 "G1" H 4720 5528 60  0001 C CNN
 F 1 "LOGO" H 4720 5732 60  0001 C CNN
 F 2 "Whatnick_logo:Whatnick_logo" H 4720 5630 50  0001 C CNN
 F 3 "" H 4720 5630 50  0001 C CNN
+F 4 " " H 4720 5630 50  0001 C CNN "DNP"
 	1    4720 5630
 	1    0    0    -1  
 $EndComp
@@ -6246,6 +6253,7 @@ F 0 "~INT1" H 6189 2273 50  0000 L CNN
 F 1 "~INT" H 6189 2169 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6110 2225 50  0001 C CNN
 F 3 "~" H 6110 2225 50  0001 C CNN
+F 4 " " H 6110 2225 50  0001 C CNN "DNP"
 	1    6110 2225
 	1    0    0    -1  
 $EndComp
@@ -6257,6 +6265,7 @@ F 0 "~E3" H 6190 1973 50  0000 L CNN
 F 1 "~E3" H 6190 1869 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6110 1925 50  0001 C CNN
 F 3 "~" H 6110 1925 50  0001 C CNN
+F 4 " " H 6110 1925 50  0001 C CNN "DNP"
 	1    6110 1925
 	1    0    0    -1  
 $EndComp
@@ -6268,6 +6277,7 @@ F 0 "~E2" H 6190 1873 50  0000 L CNN
 F 1 "~E2" H 6190 1769 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6110 1825 50  0001 C CNN
 F 3 "~" H 6110 1825 50  0001 C CNN
+F 4 " " H 6110 1825 50  0001 C CNN "DNP"
 	1    6110 1825
 	1    0    0    -1  
 $EndComp
@@ -6279,6 +6289,7 @@ F 0 "~E1" H 6190 1773 50  0000 L CNN
 F 1 "~E1" H 6190 1669 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6110 1725 50  0001 C CNN
 F 3 "~" H 6110 1725 50  0001 C CNN
+F 4 " " H 6110 1725 50  0001 C CNN "DNP"
 	1    6110 1725
 	1    0    0    -1  
 $EndComp
@@ -6290,6 +6301,7 @@ F 0 "CPUCLK1" H 6190 1467 50  0000 L CNN
 F 1 "CPUCLK" H 6190 1376 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6110 1425 50  0001 C CNN
 F 3 "~" H 6110 1425 50  0001 C CNN
+F 4 " " H 6110 1425 50  0001 C CNN "DNP"
 	1    6110 1425
 	1    0    0    -1  
 $EndComp
@@ -6301,6 +6313,7 @@ F 0 "MODE1" H 3980 2500 50  0000 C CNN
 F 1 "MODE" H 3980 2591 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4060 2725 50  0001 C CNN
 F 3 "~" H 4060 2725 50  0001 C CNN
+F 4 " " H 4060 2725 50  0001 C CNN "DNP"
 	1    4060 2725
 	-1   0    0    1   
 $EndComp
@@ -6324,6 +6337,7 @@ F 0 "PFMON1" H 4030 1400 50  0000 C CNN
 F 1 "PFMON" H 4030 1491 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4110 1625 50  0001 C CNN
 F 3 "~" H 4110 1625 50  0001 C CNN
+F 4 " " H 4110 1625 50  0001 C CNN "DNP"
 	1    4110 1625
 	-1   0    0    1   
 $EndComp
@@ -6337,6 +6351,7 @@ F 0 "~RESET1" H 4030 1181 50  0000 C CNN
 F 1 "~RESET" H 4030 1285 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4110 1425 50  0001 C CNN
 F 3 "~" H 4110 1425 50  0001 C CNN
+F 4 " " H 4110 1425 50  0001 C CNN "DNP"
 	1    4110 1425
 	-1   0    0    1   
 $EndComp
@@ -6350,6 +6365,7 @@ F 0 "IP2" H 1959 4208 50  0000 L CNN
 F 1 "IP2" H 1959 4104 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 1880 4160 50  0001 C CNN
 F 3 "~" H 1880 4160 50  0001 C CNN
+F 4 " " H 1880 4160 50  0001 C CNN "DNP"
 	1    1880 4160
 	1    0    0    -1  
 $EndComp
@@ -6361,6 +6377,7 @@ F 0 "IN2" H 1959 4428 50  0000 L CNN
 F 1 "IN2" H 1959 4324 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 1880 4380 50  0001 C CNN
 F 3 "~" H 1880 4380 50  0001 C CNN
+F 4 " " H 1880 4380 50  0001 C CNN "DNP"
 	1    1880 4380
 	1    0    0    -1  
 $EndComp

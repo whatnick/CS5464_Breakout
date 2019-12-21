@@ -4,4 +4,4 @@ Minimal breakout board to test and develop drivers for the Cirrus Logic CS5464 S
 
 Features include:
 - RC networks for sampling Voltage and Current.
-- Crystal to provide clock ASIC.
+- Crystal to provide clock to ASIC.

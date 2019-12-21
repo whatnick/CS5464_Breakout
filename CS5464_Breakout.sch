@@ -5544,29 +5544,31 @@ C2 03 C8 58 42 20 10 08 04 02 81 40 20 10 08 0F 20 63 09 81 40 20 10 08 04 02 81
 EndData
 $EndBitmap
 $Comp
-L device:C_Small C1
+L Device:C_Small C1
 U 1 1 5C20EA2E
 P 1690 1180
 F 0 "C1" H 1782 1226 50  0000 L CNN
 F 1 "27nF" H 1782 1135 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1690 1180 50  0001 C CNN
 F 3 "~" H 1690 1180 50  0001 C CNN
+F 4 "CC0603KRX7R9BB273" H 1690 1180 50  0001 C CNN "manf#"
 	1    1690 1180
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C2
+L Device:C_Small C2
 U 1 1 5C20EA8B
 P 1690 1545
 F 0 "C2" H 1782 1591 50  0000 L CNN
 F 1 "27nF" H 1782 1500 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1690 1545 50  0001 C CNN
 F 3 "~" H 1690 1545 50  0001 C CNN
+F 4 "CC0603KRX7R9BB273" H 1690 1545 50  0001 C CNN "manf#"
 	1    1690 1545
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C7
+L Device:C_Small C7
 U 1 1 5C20EAAF
 P 1960 1350
 F 0 "C7" H 2052 1396 50  0000 L CNN
@@ -5578,7 +5580,7 @@ F 4 " " H 1960 1350 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_Small R5
+L Device:R_Small R5
 U 1 1 5C20EB13
 P 1440 1075
 F 0 "R5" V 1244 1075 50  0000 C CNN
@@ -5590,13 +5592,14 @@ F 4 "MCT06030C1001FP500" H 1440 1075 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R_Small R6
+L Device:R_Small R6
 U 1 1 5C20EB62
 P 1450 1650
 F 0 "R6" V 1254 1650 50  0000 C CNN
 F 1 "1K" V 1345 1650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1450 1650 50  0001 C CNN
 F 3 "~" H 1450 1650 50  0001 C CNN
+F 4 "MCT06030C1001FP500" H 1450 1650 50  0001 C CNN "manf#"
 	1    1450 1650
 	0    1    1    0   
 $EndComp
@@ -5608,9 +5611,6 @@ Wire Wire Line
 	1550 1650 1690 1650
 Wire Wire Line
 	1690 1650 1690 1645
-Wire Wire Line
-	1690 1275 1690 1280
-Connection ~ 1690 1280
 Wire Wire Line
 	1690 1650 1960 1650
 Wire Wire Line
@@ -5634,35 +5634,35 @@ F 3 "" H 1635 1370 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1635 1370 1690 1370
-Wire Wire Line
-	1690 1280 1690 1370
 Connection ~ 1690 1370
 Wire Wire Line
 	1690 1370 1690 1445
 $Comp
-L device:C_Small C3
+L Device:C_Small C3
 U 1 1 5C20F8C7
 P 1720 2200
 F 0 "C3" H 1812 2246 50  0000 L CNN
 F 1 "27nF" H 1812 2155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1720 2200 50  0001 C CNN
 F 3 "~" H 1720 2200 50  0001 C CNN
+F 4 "CC0603KRX7R9BB273" H 1720 2200 50  0001 C CNN "manf#"
 	1    1720 2200
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C4
+L Device:C_Small C4
 U 1 1 5C20F8CD
 P 1720 2565
 F 0 "C4" H 1812 2611 50  0000 L CNN
 F 1 "27nF" H 1812 2520 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1720 2565 50  0001 C CNN
 F 3 "~" H 1720 2565 50  0001 C CNN
+F 4 "CC0603KRX7R9BB273" H 1720 2565 50  0001 C CNN "manf#"
 	1    1720 2565
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C8
+L Device:C_Small C8
 U 1 1 5C20F8D3
 P 1990 2370
 F 0 "C8" H 2082 2416 50  0000 L CNN
@@ -5674,24 +5674,26 @@ F 4 " " H 1990 2370 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_Small R7
+L Device:R_Small R7
 U 1 1 5C20F8D9
 P 1470 2095
 F 0 "R7" V 1274 2095 50  0000 C CNN
 F 1 "1K" V 1365 2095 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1470 2095 50  0001 C CNN
 F 3 "~" H 1470 2095 50  0001 C CNN
+F 4 "MCT06030C1001FP500" H 1470 2095 50  0001 C CNN "manf#"
 	1    1470 2095
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R_Small R8
+L Device:R_Small R8
 U 1 1 5C20F8DF
 P 1480 2670
 F 0 "R8" V 1284 2670 50  0000 C CNN
 F 1 "1K" V 1375 2670 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1480 2670 50  0001 C CNN
 F 3 "~" H 1480 2670 50  0001 C CNN
+F 4 "MCT06030C1001FP500" H 1480 2670 50  0001 C CNN "manf#"
 	1    1480 2670
 	0    1    1    0   
 $EndComp
@@ -5703,9 +5705,6 @@ Wire Wire Line
 	1580 2670 1720 2670
 Wire Wire Line
 	1720 2670 1720 2665
-Wire Wire Line
-	1720 2295 1720 2300
-Connection ~ 1720 2300
 Wire Wire Line
 	1720 2670 1990 2670
 Wire Wire Line
@@ -5733,35 +5732,35 @@ F 3 "" H 1665 2390 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1665 2390 1720 2390
-Wire Wire Line
-	1720 2300 1720 2390
 Connection ~ 1720 2390
 Wire Wire Line
 	1720 2390 1720 2465
 $Comp
-L device:C_Small C5
+L Device:C_Small C5
 U 1 1 5C20FC71
 P 1735 3210
 F 0 "C5" H 1827 3256 50  0000 L CNN
 F 1 "27nF" H 1827 3165 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1735 3210 50  0001 C CNN
 F 3 "~" H 1735 3210 50  0001 C CNN
+F 4 "CC0603KRX7R9BB273" H 1735 3210 50  0001 C CNN "manf#"
 	1    1735 3210
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C6
+L Device:C_Small C6
 U 1 1 5C20FC77
 P 1735 3575
 F 0 "C6" H 1827 3621 50  0000 L CNN
 F 1 "27nF" H 1827 3530 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1735 3575 50  0001 C CNN
 F 3 "~" H 1735 3575 50  0001 C CNN
+F 4 "CC0603KRX7R9BB273" H 1735 3575 50  0001 C CNN "manf#"
 	1    1735 3575
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C9
+L Device:C_Small C9
 U 1 1 5C20FC7D
 P 2005 3380
 F 0 "C9" H 2097 3426 50  0000 L CNN
@@ -5773,24 +5772,26 @@ F 4 " " H 2005 3380 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R_Small R9
+L Device:R_Small R9
 U 1 1 5C20FC83
 P 1485 3105
 F 0 "R9" V 1289 3105 50  0000 C CNN
 F 1 "1K" V 1380 3105 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1485 3105 50  0001 C CNN
 F 3 "~" H 1485 3105 50  0001 C CNN
+F 4 "MCT06030C1001FP500" H 1485 3105 50  0001 C CNN "manf#"
 	1    1485 3105
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R_Small R10
+L Device:R_Small R10
 U 1 1 5C20FC89
 P 1495 3680
 F 0 "R10" V 1299 3680 50  0000 C CNN
 F 1 "1K" V 1390 3680 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1495 3680 50  0001 C CNN
 F 3 "~" H 1495 3680 50  0001 C CNN
+F 4 "MCT06030C1001FP500" H 1495 3680 50  0001 C CNN "manf#"
 	1    1495 3680
 	0    1    1    0   
 $EndComp
@@ -5802,9 +5803,6 @@ Wire Wire Line
 	1595 3680 1735 3680
 Wire Wire Line
 	1735 3680 1735 3675
-Wire Wire Line
-	1735 3305 1735 3310
-Connection ~ 1735 3310
 Wire Wire Line
 	1735 3680 2005 3680
 Wire Wire Line
@@ -5832,8 +5830,6 @@ F 3 "" H 1680 3400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1680 3400 1735 3400
-Wire Wire Line
-	1735 3310 1735 3400
 Connection ~ 1735 3400
 Wire Wire Line
 	1735 3400 1735 3475
@@ -5854,7 +5850,7 @@ IP
 Text GLabel 1180 2670 0    50   Input ~ 0
 IN
 $Comp
-L device:R_Small R3
+L Device:R_Small R3
 U 1 1 5C215C49
 P 1285 2230
 F 0 "R3" H 1226 2184 50  0000 R CNN
@@ -5866,13 +5862,14 @@ F 4 "CRL0603-FW-2R40ELF" H 1285 2230 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R_Small R4
+L Device:R_Small R4
 U 1 1 5C215CBA
 P 1285 2540
 F 0 "R4" H 1226 2494 50  0000 R CNN
 F 1 "2.4R" H 1226 2585 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1285 2540 50  0001 C CNN
 F 3 "~" H 1285 2540 50  0001 C CNN
+F 4 "CRL0603-FW-2R40ELF" H 1285 2540 50  0001 C CNN "manf#"
 	1    1285 2540
 	-1   0    0    1   
 $EndComp
@@ -5888,24 +5885,26 @@ F 3 "" H 1220 2390 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R_Small R1
+L Device:R_Small R1
 U 1 1 5C218E12
 P 1280 3235
 F 0 "R1" H 1221 3189 50  0000 R CNN
 F 1 "2.4R" H 1221 3280 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1280 3235 50  0001 C CNN
 F 3 "~" H 1280 3235 50  0001 C CNN
+F 4 "CRL0603-FW-2R40ELF" H 1280 3235 50  0001 C CNN "manf#"
 	1    1280 3235
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R_Small R2
+L Device:R_Small R2
 U 1 1 5C218E18
 P 1280 3545
 F 0 "R2" H 1221 3499 50  0000 R CNN
 F 1 "2.4R" H 1221 3590 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1280 3545 50  0001 C CNN
 F 3 "~" H 1280 3545 50  0001 C CNN
+F 4 "CRL0603-FW-2R40ELF" H 1280 3545 50  0001 C CNN "manf#"
 	1    1280 3545
 	-1   0    0    1   
 $EndComp
@@ -5985,29 +5984,31 @@ IIN2+
 Text GLabel 2125 3680 2    50   Output ~ 0
 IIN2-
 $Comp
-L device:C_Small C10
+L Device:C_Small C10
 U 1 1 5C23D724
 P 6445 1120
 F 0 "C10" H 6537 1166 50  0000 L CNN
 F 1 "100nF" H 6537 1075 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6445 1120 50  0001 C CNN
 F 3 "~" H 6445 1120 50  0001 C CNN
+F 4 "GCJ188R71H104KA12D" H 6445 1120 50  0001 C CNN "manf#"
 	1    6445 1120
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C12
+L Device:C_Small C12
 U 1 1 5C23D7E6
 P 6025 1120
 F 0 "C12" H 6117 1166 50  0000 L CNN
 F 1 "100nF" H 6117 1075 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6025 1120 50  0001 C CNN
 F 3 "~" H 6025 1120 50  0001 C CNN
+F 4 "GCJ188R71H104KA12D" H 6025 1120 50  0001 C CNN "manf#"
 	1    6025 1120
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C11
+L Device:C_Small C11
 U 1 1 5C23DC6A
 P 4190 955
 F 0 "C11" H 4282 1001 50  0000 L CNN
@@ -6066,7 +6067,7 @@ Wire Wire Line
 	5770 3825 5900 3825
 Connection ~ 5900 3825
 $Comp
-L device:Crystal Y1
+L Device:Crystal Y1
 U 1 1 5C257450
 P 4025 3460
 F 0 "Y1" V 3979 3591 50  0000 L CNN
@@ -6159,7 +6160,7 @@ VREF
 Text GLabel 5770 1225 2    50   Output ~ 0
 VREF
 $Comp
-L graphic:Logo_Open_Hardware_Small LOGO1
+L Graphic:Logo_Open_Hardware_Small LOGO1
 U 1 1 5C28345E
 P 5315 5610
 F 0 "LOGO1" H 5315 5885 50  0001 C CNN
@@ -6389,4 +6390,19 @@ Text GLabel 1680 4160 0    50   Output ~ 0
 IP2
 Text GLabel 1680 4380 0    50   Output ~ 0
 IN2
+Wire Wire Line
+	1690 1275 1690 1280
+Wire Wire Line
+	1720 2295 1720 2300
+Wire Wire Line
+	1735 3305 1735 3310
+Connection ~ 1690 1280
+Wire Wire Line
+	1690 1280 1690 1370
+Connection ~ 1720 2300
+Wire Wire Line
+	1720 2300 1720 2390
+Connection ~ 1735 3310
+Wire Wire Line
+	1735 3310 1735 3400
 $EndSCHEMATC

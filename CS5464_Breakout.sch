@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:CS5464_Breakout-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -6299,10 +6298,10 @@ F 4 " " H 6110 1725 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 CPUCLK1
+L Connector_Generic:Conn_01x01 CCLK1
 U 1 1 5C2FAF2B
 P 6110 1425
-F 0 "CPUCLK1" H 6190 1467 50  0000 L CNN
+F 0 "CCLK1" H 6190 1467 50  0000 L CNN
 F 1 "CPUCLK" H 6190 1376 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 6110 1425 50  0001 C CNN
 F 3 "~" H 6110 1425 50  0001 C CNN
